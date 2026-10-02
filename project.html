@@ -1,0 +1,1135 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Train Reservation System</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-train"></i>
+
+            Train<span>Reserve</span>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#search">Search Train</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#routes">Routes</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <div class="nav-buttons">
+
+            <a href="login.jsp"
+               class="login-btn">
+                Login
+            </a>
+
+            <a href="register.jsp"
+               class="register-btn">
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HOME SECTION ================= -->
+
+<section id="home"
+         class="hero">
+
+    <div class="hero-content">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="hero-text">
+
+            <p class="welcome">
+
+                <i class="fa-solid fa-train"></i>
+
+                WELCOME TO TRAIN RESERVE
+
+            </p>
+
+
+            <h1>
+
+                Your Journey
+
+                <br>
+
+                <span>Starts Here.</span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Book train tickets quickly and easily.
+
+                Search trains, choose your seats and
+
+                enjoy a comfortable journey with our
+
+                Train Reservation System.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#search"
+                   class="primary-btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search Trains
+
+                </a>
+
+
+                <a href="register.jsp"
+                   class="secondary-btn">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Create Account
+
+                </a>
+
+            </div>
+
+
+            <!-- STATISTICS -->
+
+            <div class="statistics">
+
+                <div>
+
+                    <h3>100+</h3>
+
+                    <p>Trains</p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>50+</h3>
+
+                    <p>Stations</p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>5000+</h3>
+
+                    <p>Bookings</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="train-card">
+
+            <div class="train-icon">
+
+                <i class="fa-solid fa-train-subway"></i>
+
+            </div>
+
+
+            <h2>
+
+                Train Reservation
+
+            </h2>
+
+
+            <p>
+
+                Fast • Safe • Comfortable
+
+            </p>
+
+
+            <div class="route-display">
+
+                <div>
+
+                    <strong>MAS</strong>
+
+                    <small>Chennai</small>
+
+                </div>
+
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+
+                <div>
+
+                    <strong>CBE</strong>
+
+                    <small>Coimbatore</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-info">
+
+                <span>
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    5h 30m
+
+                </span>
+
+
+                <span>
+
+                    <i class="fa-solid fa-chair"></i>
+
+                    Seats Available
+
+                </span>
+
+            </div>
+
+
+            <a href="#search"
+               class="card-button">
+
+                Search Trains
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SEARCH SECTION ================= -->
+
+<section id="search"
+         class="search-section">
+
+    <div class="section-title">
+
+        <h2>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Search Trains
+
+        </h2>
+
+        <p>
+
+            Find the perfect train for your journey
+
+        </p>
+
+    </div>
+
+
+    <div class="search-box">
+
+
+        <div class="input-box">
+
+            <label>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                From
+
+            </label>
+
+
+            <select id="from">
+
+                <option>
+                    Select Station
+                </option>
+
+                <option>
+                    Chennai
+                </option>
+
+                <option>
+                    Coimbatore
+                </option>
+
+                <option>
+                    Madurai
+                </option>
+
+                <option>
+                    Trichy
+                </option>
+
+                <option>
+                    Salem
+                </option>
+
+                <option>
+                    Bangalore
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <button class="swap-btn">
+
+            <i class="fa-solid fa-right-left"></i>
+
+        </button>
+
+
+
+        <div class="input-box">
+
+            <label>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                To
+
+            </label>
+
+
+            <select id="to">
+
+                <option>
+                    Select Station
+                </option>
+
+                <option>
+                    Chennai
+                </option>
+
+                <option>
+                    Coimbatore
+                </option>
+
+                <option>
+                    Madurai
+                </option>
+
+                <option>
+                    Trichy
+                </option>
+
+                <option>
+                    Salem
+                </option>
+
+                <option>
+                    Bangalore
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="input-box">
+
+            <label>
+
+                <i class="fa-solid fa-calendar"></i>
+
+                Journey Date
+
+            </label>
+
+
+            <input type="date"
+                   id="journeyDate">
+
+        </div>
+
+
+
+        <div class="input-box">
+
+            <label>
+
+                <i class="fa-solid fa-users"></i>
+
+                Passengers
+
+            </label>
+
+
+            <select>
+
+                <option>1 Passenger</option>
+
+                <option>2 Passengers</option>
+
+                <option>3 Passengers</option>
+
+                <option>4 Passengers</option>
+
+                <option>5 Passengers</option>
+
+                <option>6 Passengers</option>
+
+            </select>
+
+        </div>
+
+
+
+        <button class="search-button"
+                onclick="searchTrain()">
+
+            <i class="fa-solid fa-search"></i>
+
+            Search
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services"
+         class="services">
+
+    <div class="section-title">
+
+        <h2>
+
+            Our Services
+
+        </h2>
+
+        <p>
+
+            Everything you need for a smooth journey
+
+        </p>
+
+    </div>
+
+
+    <div class="service-container">
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-train"></i>
+
+            </div>
+
+
+            <h3>
+
+                Search Trains
+
+            </h3>
+
+
+            <p>
+
+                Search trains based on your
+
+                source, destination and
+
+                journey date.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-ticket"></i>
+
+            </div>
+
+
+            <h3>
+
+                Easy Booking
+
+            </h3>
+
+
+            <p>
+
+                Book your train tickets
+
+                quickly through our
+
+                simple booking system.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-chair"></i>
+
+            </div>
+
+
+            <h3>
+
+                Seat Selection
+
+            </h3>
+
+
+            <p>
+
+                Select your preferred
+
+                seat and travel class
+
+                during booking.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+
+            <h3>
+
+                Secure Booking
+
+            </h3>
+
+
+            <p>
+
+                Your passenger and
+
+                reservation information
+
+                is securely handled.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= POPULAR ROUTES ================= -->
+
+<section id="routes"
+         class="routes-section">
+
+    <div class="section-title">
+
+        <h2>
+
+            Popular Train Routes
+
+        </h2>
+
+        <p>
+
+            Explore some popular railway routes
+
+        </p>
+
+    </div>
+
+
+    <div class="route-container">
+
+
+        <!-- ROUTE 1 -->
+
+        <div class="route-card">
+
+            <div class="route-top">
+
+                <span>
+
+                    🚆 Express
+
+                </span>
+
+                <span>
+
+                    ₹450
+
+                </span>
+
+            </div>
+
+
+            <div class="route-main">
+
+                <div>
+
+                    <h3>Chennai</h3>
+
+                    <p>MAS</p>
+
+                </div>
+
+
+                <div class="route-line">
+
+                    <i class="fa-solid fa-train"></i>
+
+                    <hr>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Coimbatore</h3>
+
+                    <p>CBE</p>
+
+                </div>
+
+            </div>
+
+
+            <a href="booking.jsp">
+
+                Book Now
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ROUTE 2 -->
+
+        <div class="route-card">
+
+            <div class="route-top">
+
+                <span>
+
+                    🚆 Superfast
+
+                </span>
+
+                <span>
+
+                    ₹550
+
+                </span>
+
+            </div>
+
+
+            <div class="route-main">
+
+                <div>
+
+                    <h3>Chennai</h3>
+
+                    <p>MAS</p>
+
+                </div>
+
+
+                <div class="route-line">
+
+                    <i class="fa-solid fa-train"></i>
+
+                    <hr>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Madurai</h3>
+
+                    <p>MDU</p>
+
+                </div>
+
+            </div>
+
+
+            <a href="booking.jsp">
+
+                Book Now
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ROUTE 3 -->
+
+        <div class="route-card">
+
+            <div class="route-top">
+
+                <span>
+
+                    🚆 Express
+
+                </span>
+
+                <span>
+
+                    ₹600
+
+                </span>
+
+            </div>
+
+
+            <div class="route-main">
+
+                <div>
+
+                    <h3>Chennai</h3>
+
+                    <p>MAS</p>
+
+                </div>
+
+
+                <div class="route-line">
+
+                    <i class="fa-solid fa-train"></i>
+
+                    <hr>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Bangalore</h3>
+
+                    <p>SBC</p>
+
+                </div>
+
+            </div>
+
+
+            <a href="booking.jsp">
+
+                Book Now
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about"
+         class="about-section">
+
+
+    <div class="about-text">
+
+        <p class="small-heading">
+
+            ABOUT OUR SYSTEM
+
+        </p>
+
+
+        <h2>
+
+            Making Train Booking
+
+            <span>Simple & Easy</span>
+
+        </h2>
+
+
+        <p>
+
+            Train Reservation System is a web-based
+
+            application designed to make railway ticket
+
+            reservation easier for passengers.
+
+        </p>
+
+
+        <p>
+
+            Users can search for trains, check available
+
+            routes, select seats and reserve tickets
+
+            through a simple and user-friendly interface.
+
+        </p>
+
+
+        <a href="register.jsp"
+           class="primary-btn">
+
+            Get Started
+
+        </a>
+
+    </div>
+
+
+    <div class="about-features">
+
+        <div>
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Fast</h3>
+
+            <p>
+
+                Quick reservation
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <i class="fa-solid fa-lock"></i>
+
+            <h3>Secure</h3>
+
+            <p>
+
+                Protected information
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <i class="fa-solid fa-mobile-screen"></i>
+
+            <h3>Responsive</h3>
+
+            <p>
+
+                Mobile friendly
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>Support</h3>
+
+            <p>
+
+                Easy assistance
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+
+    <h2>
+
+        Ready to Start Your Journey?
+
+    </h2>
+
+
+    <p>
+
+        Register now and book your train ticket.
+
+    </p>
+
+
+    <a href="register.jsp">
+
+        Create Account
+
+    </a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h2>
+
+                🚆 Train<span>Reserve</span>
+
+            </h2>
+
+
+            <p>
+
+                Your trusted Train Reservation System
+
+                for a simple and comfortable journey.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="#search">Search Train</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#about">About</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                support@trainreserve.com
+
+            </p>
+
+
+            <p>
+
+                <i class="fa-solid fa-phone"></i>
+
+                +91 98765 43210
+
+            </p>
+
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Chennai, Tamil Nadu
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+
+            <div class="social-icons">
+
+                <a href="#">
+
+                    <i class="fa-brands fa-facebook"></i>
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-brands fa-twitter"></i>
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Train Reservation System.
+
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+```
